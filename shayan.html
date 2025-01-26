@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shayan Builders and Developers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .hero-section {
+        background: url("https://www.shutterstock.com/image-photo/construction-engineer-civil-team-work-600nw-2140542901.jpg")
+          no-repeat center center/cover;
+        padding: 120px 0;
+        text-align: center;
+      }
+      .hero-section h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      .services-section {
+        padding: 50px 0;
+        background: #f9f9f9;
+      }
+      .services-section .card {
+        border: none;
+        transition: transform 0.3s ease;
+      }
+      .services-section .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+      .portfolio-section {
+        padding: 50px 0;
+      }
+      .portfolio-carousel img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .footer {
+        background: #343a40;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .footer a {
+        color: #ffc107;
+        text-decoration: none;
+      }
+      .carousel-control-next-icon {
+        background-color: black;
+      }
+      .carousel-control-prev-icon {
+        background-color: black;
+      }
+      .about-section,
+      .contact-section {
+        padding: 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="logo-1.jpg"
+            alt="Shayan Builders Logo"
+            style="width: 40px; height: auto"
+          />
+          Shayan Builders
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="container">
+        <h1>Plan. Perform. Inspire.</h1>
+        <p>Your trusted partner in building dreams and developing futures.</p>
+        <a href="#contact" class="btn btn-warning btn-lg">Get Started</a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about-section">
+      <div class="container text-center">
+        <h2>About Us</h2>
+        <p>
+          Shayan Builders and Developers is a leading construction company
+          dedicated to providing innovative solutions in residential,
+          commercial, and industrial development. Our team is committed to
+          delivering quality and sustainable projects that meet the needs of our
+          clients and enhance the built environment.
+        </p>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="services-section">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <h2>Our Services</h2>
+          <p>Delivering excellence in every project we undertake.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card p-4 text-center">
+              <i class="fas fa-home fa-3x mb-3 text-warning"></i>
+              <h5>Residential Construction</h5>
+              <p>Creating comfortable and stylish homes for families.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card p-4 text-center">
+              <i class="fas fa-building fa-3x mb-3 text-warning"></i>
+              <h5>Commercial Construction</h5>
+              <p>Designing innovative spaces for businesses.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card p-4 text-center">
+              <i class="fas fa-industry fa-3x mb-3 text-warning"></i>
+              <h5>Industrial Development</h5>
+              <p>Building efficient and sustainable facilities.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card p-4 text-center">
+              <i class="fas fa-pencil-ruler fa-3x mb-3 text-warning"></i>
+              <h5>Architectural Design</h5>
+              <p>Innovative planning and flawless execution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="portfolio-section">
+      <div class="container text-center">
+        <h2>Our Portfolio</h2>
+        <p>Explore our completed and ongoing projects.</p>
+        <div
+          id="portfolioCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://ibb.co/9wrJTv0"
+                ><img
+                  src="https://i.ibb.co/pWLgzPT/Whats-App-Image-2025-01-26-at-12-56-41-AM.jpg"
+                  alt="Whats-App-Image-2025-01-26-at-12-56-41-AM"
+                  border="0"
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ibb.co/YRQdHYd"
+                ><img
+                  src="https://i.ibb.co/2nhMGmM/Whats-App-Image-2025-01-26-at-12-56-06-AM.jpg"
+                  alt="Whats-App-Image-2025-01-26-at-12-56-06-AM"
+                  border="0"
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ibb.co/9yTV1qb"
+                ><img
+                  src="https://i.ibb.co/vLPQTJ3/Whats-App-Image-2025-01-26-at-12-51-12-AM.jpg"
+                  alt="Whats-App-Image-2025-01-26-at-12-51-12-AM"
+                  border="0"
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ibb.co/3hLjz2V"
+                ><img
+                  src="https://i.ibb.co/vzKTYpf/Whats-App-Image-2025-01-25-at-11-39-43-PM.jpg"
+                  alt="Whats-App-Image-2025-01-25-at-11-39-43-PM"
+                  border="0"
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ibb.co/qCq6XpL"
+                ><img
+                  src="https://i.ibb.co/5kpZtLX/Whats-App-Image-2025-01-25-at-11-38-51-PM.jpg"
+                  alt="Whats-App-Image-2025-01-25-at-11-38-51-PM"
+                  border="0"
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ibb.co/ggcYSMg"
+                ><img
+                  src="https://i.ibb.co/RHJ83pH/Whats-App-Image-2025-01-25-at-11-35-13-PM.jpg"
+                  alt="Whats-App-Image-2025-01-25-at-11-35-13-PM"
+                  border="0"
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ibb.co/S54tCpz"
+                ><img
+                  src="https://i.ibb.co/tQTqr59/Whats-App-Image-2025-01-25-at-11-34-25-PM.jpg"
+                  alt="Whats-App-Image-2025-01-25-at-11-34-25-PM"
+                  border="0"
+              /></a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section">
+      <div class="container text-center">
+        <h2>Contact Us</h2>
+        <!-- <p><strong>Name:</strong> Shayan Malik</p> -->
+        <p><strong>Phone Numbers:</strong> 0300-2704499, 0324-2704499</p>
+        <p><strong>Company:</strong> Shayan Builders & Developers</p>
+        <p>
+          <strong>Address:</strong>
+          <a
+            href="https://maps.app.goo.gl/x99HN6htjVCp8V8Q6?g_st=iw"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            10-C, Khalid Commercial Street I-A, Phase 7 Ext., D.H.A. Karachi
+          </a>
+        </p>
+        <!-- Embedded Google Map -->
+        <div class="map-container mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.057199700223!2d67.07823551500392!3d24.81758128408851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f2d247fcefb%3A0xb34298b83ab0ddbb!2s24%C2%B049'03.3%22N+67%C2%B004'44.8%22E!5e0!3m2!1sen!2s!4v1234567890"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2025 Shayan Builders and Developers. All rights reserved.</p>
+      <p>
+        <a href="mailto:info@shayanbuilders.com">info@shayanbuilders.com</a>
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
